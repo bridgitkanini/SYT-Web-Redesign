@@ -77,6 +77,7 @@ function HeroSection3() {
     position: "absolute",
   });
 
+
   // Function to generate random size for both images and circles
   const getRandomSize = () => {
     const size = Math.floor(Math.random() * 150) + 10;
@@ -119,7 +120,8 @@ function HeroSection3() {
 
         {/* hero img */}
 
-        <div className="flex flex-col items-center border-yellow-500 min-w-[1440px] min-h-[700px] rounded-[70%] relative">
+        <div className="flex flex-col items-center border-yellow-500 border min-w-[1440px] min-h-[700px] rounded-[70%] relative overflow-hidden">
+
           {/* Render images */}
           {images.map((imageUrl, index) => (
             <img
